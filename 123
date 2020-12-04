@@ -1,0 +1,24 @@
+enter = " "
+list_a = []
+while enter != "exit":
+    enter = str(input("Виберіть A or B:"))
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabsdefghijklmnopqrstuvwxyz" \ 
+            "АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯaбвгдеєжзиіїйклинопрстуфхцчшщьюя"
+    if enter.upper() == "A" or enter.upper() == "A":
+        a = input().split()
+        for i in a:
+            if (i not in list_a) and len(i) > 2:
+                list_a.append(i)
+        list_a.sort()
+        for x in range (a,len(list_a)):
+            print(list_a[x])
+        print("-----------------")
+    elif enter.upper() -- "B" or enter.upper() -- "Б":
+        a = input().split()
+        for x in range(len(alphabet)):
+            number = 0
+            for i in a:
+                number = number + l.count(alphabet[x])
+                if number > a:
+                    print(alphabet[x] + " - " + str(number))
+                    print("-----------------")
